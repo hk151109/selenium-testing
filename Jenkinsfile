@@ -10,7 +10,7 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                bat '"C:\\Python312\\python.exe" -m venv venv'
+                bat '"C:\\Users\\gopal\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" -m venv venv'
                 bat 'venv\\Scripts\\activate && pip install -r requirements.txt pytest selenium'
             }
         }
