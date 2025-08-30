@@ -61,7 +61,7 @@ def test_register_login_and_add_task(driver):
     print(f"[DEBUG] Current tasks: {task_texts}")
     assert any(task_text in t for t in task_texts), "Task not found in task list"
 
-    print("[SUCCESS] Test passed ✅ - Task added and verified!")
+    print("[SUCCESS] Test passed - Task added and verified!")
 
 
 def test_admin_login_and_add_task(driver):
@@ -89,4 +89,4 @@ def test_admin_login_and_add_task(driver):
     print(f"[DEBUG] Current tasks: {task_texts}")
     assert any(task_text in t for t in task_texts), "Admin task not found"
 
-    print("[SUCCESS] Admin login + task test passed ✅")
+    print("[SUCCESS] Admin login + task test passed")
