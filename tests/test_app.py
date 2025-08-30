@@ -10,7 +10,7 @@ from selenium.webdriver.common.by import By
 def driver():
     """Setup Chrome WebDriver with options"""
     options = Options()
-    # options.add_argument("--headless")  # Uncomment for headless mode (Jenkins)
+    options.add_argument("--headless")  # Uncomment for headless mode (Jenkins)
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
 
